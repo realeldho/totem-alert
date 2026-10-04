@@ -16,6 +16,9 @@
 		],
 		"client": [
 			"com.realeldho.totemalert.client.TotemAlertClient"
+		],
+		"modmenu": [
+			"com.realeldho.totemalert.client.TotemAlertModMenu"
 		]
 	},
 	"mixins": [
