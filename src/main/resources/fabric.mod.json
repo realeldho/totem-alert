@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "totem-alert",
+	"version": "${version}",
+	"name": "Totem Alert",
+	"description": "Alerts you when a Totem of Undying is not equipped in your off-hand.",
+	"authors": [
+		"real_eldho"
+	],
+	"license": "MIT",
+	"icon": "assets/totem-alert/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"main": [
+			"com.realeldho.totemalert.TotemAlert"
+		],
+		"client": [
+			"com.realeldho.totemalert.client.TotemAlertClient"
+		]
+	},
+	"mixins": [
+		"totem-alert.mixins.json",
+		{
+			"config": "totem-alert.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
